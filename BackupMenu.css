@@ -1,0 +1,174 @@
+.backup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.backup-overlay.show {
+  opacity: 1;
+}
+
+.backup-menu {
+  background: #222e35;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  transition: transform 0.3s;
+}
+
+.backup-menu.show {
+  transform: scale(1);
+}
+
+.backup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #3b4a54;
+}
+
+.backup-header h3 {
+  color: #e9edef;
+  font-size: 20px;
+  margin: 0;
+}
+
+.close-btn {
+  background: transparent;
+  border: none;
+  color: #8696a0;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, color 0.2s;
+}
+
+.close-btn:hover {
+  background: #2a3942;
+  color: #e9edef;
+}
+
+.close-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.backup-content {
+  padding: 20px;
+}
+
+.backup-section {
+  margin-bottom: 24px;
+}
+
+.backup-section h4 {
+  color: #e9edef;
+  font-size: 16px;
+  margin: 0 0 8px 0;
+}
+
+.section-desc {
+  color: #8696a0;
+  font-size: 13px;
+  margin: 0 0 16px 0;
+}
+
+.backup-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  background: #2a3942;
+  border: 1px solid #3b4a54;
+  border-radius: 8px;
+  color: #e9edef;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.2s, border-color 0.2s;
+}
+
+.backup-option:hover {
+  background: #323d47;
+  border-color: #00a884;
+}
+
+.backup-option.danger:hover {
+  background: #3d2a2a;
+  border-color: #ff6b6b;
+}
+
+.backup-option svg {
+  width: 24px;
+  height: 24px;
+  color: #00a884;
+  flex-shrink: 0;
+}
+
+.backup-option.danger svg {
+  color: #ff6b6b;
+}
+
+.backup-option div {
+  flex: 1;
+  text-align: left;
+}
+
+.backup-option strong {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.backup-option span {
+  display: block;
+  font-size: 12px;
+  color: #8696a0;
+}
+
+.backup-divider {
+  height: 1px;
+  background: #3b4a54;
+  margin: 24px 0;
+}
+
+.backup-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  background: rgba(0, 168, 132, 0.1);
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.backup-info svg {
+  width: 20px;
+  height: 20px;
+  color: #00a884;
+  flex-shrink: 0;
+}
+
+.backup-info p {
+  margin: 0;
+  font-size: 12px;
+  color: #8696a0;
+  line-height: 1.5;
+}
