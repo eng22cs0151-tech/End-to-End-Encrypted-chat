@@ -1,12 +1,8 @@
-# 🔒 Secure P2P Chat Application
+#  Secure P2P Chat Application
 
 A modern, end-to-end encrypted peer-to-peer chat application with file sharing capabilities. Built with React and PeerJS, featuring military-grade encryption to ensure complete privacy and security.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)
-![Encryption](https://img.shields.io/badge/Encryption-NaCl-green)
 
-## 🌟 Features
 
 ### Core Features
 - **End-to-End Encryption**: Military-grade encryption using NaCl (Curve25519, XSalsa20, Poly1305)
@@ -30,7 +26,7 @@ A modern, end-to-end encrypted peer-to-peer chat application with file sharing c
 - **No Server Storage**: Messages are never stored on any server
 - **Ephemeral by Design**: Chat history exists only on user devices
 
-## 🛡️ Security Architecture
+##  Security Architecture
 
 ### Encryption Details
 - **Algorithm**: NaCl box encryption (authenticated encryption)
@@ -41,14 +37,14 @@ A modern, end-to-end encrypted peer-to-peer chat application with file sharing c
 - **Perfect Forward Secrecy**: New keys for each session
 
 ### Privacy Guarantees
-- ✅ Messages encrypted before transmission
-- ✅ Keys generated locally, never transmitted
-- ✅ Server only facilitates peer discovery
-- ✅ No message logging or storage
-- ✅ No metadata collection
-- ✅ Client-side encryption/decryption only
+-  Messages encrypted before transmission
+-  Keys generated locally, never transmitted
+-  Server only facilitates peer discovery
+-  No message logging or storage
+-  No metadata collection
+-  Client-side encryption/decryption only
 
-## 🚀 Tech Stack
+##  Tech Stack
 
 ### Frontend
 - **React 18** - UI framework
@@ -65,10 +61,8 @@ A modern, end-to-end encrypted peer-to-peer chat application with file sharing c
 - **TweetNaCl** - Cryptography library
 - **TweetNaCl-util** - Encoding utilities
 
-### Deployment
-- **Vercel** - Cloud hosting platform
 
-## 📦 Installation
+##  Installation
 
 ### Prerequisites
 - Node.js (v16 or higher)
@@ -76,18 +70,13 @@ A modern, end-to-end encrypted peer-to-peer chat application with file sharing c
 
 ### Setup
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/secure-p2p-chat.git
-cd secure-p2p-chat
-```
 
-2. **Install dependencies**
+1. **Install dependencies**
 ```bash
 npm install
 ```
 
-3. **Start the development servers**
+2. **Start the development servers**
 
 Terminal 1 - Start PeerJS signaling server:
 ```bash
@@ -99,12 +88,12 @@ Terminal 2 - Start React development server:
 npm run dev
 ```
 
-4. **Open the application**
+3. **Open the application**
 ```
 http://localhost:3000
 ```
 
-## 🎯 Usage
+
 
 ### Quick Start
 
@@ -146,7 +135,7 @@ http://localhost:3000
 - Click the X button in the top-right corner
 - You'll return to the connection screen
 
-## 🏗️ Project Structure
+##  Project Structure
 
 ```
 secure-p2p-chat/
@@ -176,7 +165,7 @@ secure-p2p-chat/
 └── README.md
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 ### PeerJS Server
 The app uses PeerJS cloud server by default. To use a custom server:
@@ -192,51 +181,18 @@ const peer = new Peer({
 
 2. Deploy your own PeerJS server (see `server/index.js`)
 
-## 🌐 Deployment
+
 
 ### Deploy to Vercel (Recommended)
 
-1. **Install Vercel CLI**
-```bash
-npm install -g vercel
-```
 
-2. **Deploy**
-```bash
-vercel
-```
-
-3. **Production deployment**
-```bash
-vercel --prod
-```
-
-### Deploy to Netlify
-
-1. **Install Netlify CLI**
-```bash
-npm install -g netlify-cli
-```
-
-2. **Build and deploy**
-```bash
-npm run build
-netlify deploy --prod
-```
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
-
-## 🔐 Security Considerations
 
 ### What's Encrypted
-- ✅ All text messages
-- ✅ All file contents
-- ✅ File metadata (name, type, size)
+-  All text messages
+-  All file contents
+-  File metadata (name, type, size)
 
-### What's NOT Encrypted
-- ⚠️ Peer IDs (public identifiers)
-- ⚠️ Connection metadata (IP addresses visible to PeerJS server)
-- ⚠️ Timing information (when messages are sent)
+
 
 ### Best Practices
 - Use the app over HTTPS in production
@@ -245,27 +201,16 @@ See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
 - Use strong device passwords
 - Keep your browser updated
 
-## 🤝 Contributing
 
-Contributions are welcome! Please follow these steps:
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🐛 Known Issues
+##  Known Issues
 
 - Large files (>10MB) may take time to encrypt/decrypt
 - Connection may fail if both peers are behind strict NAT/firewalls
 - Browser local storage has size limits (~5-10MB)
 
-## 🔮 Future Enhancements
+##  Future Enhancements
 
 - [ ] Group chat support
 - [ ] Voice/video calling
@@ -277,44 +222,37 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [ ] Message search functionality
 - [ ] Cloud backup integration (Google Drive, Dropbox)
 
-## 📞 Support
+##  Support
 
 For issues, questions, or suggestions:
 - Open an issue on GitHub
 - Email: your-email@example.com
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - [PeerJS](https://peerjs.com/) - WebRTC wrapper
 - [TweetNaCl](https://tweetnacl.js.org/) - Cryptography library
 - [React](https://react.dev/) - UI framework
 - [Vite](https://vitejs.dev/) - Build tool
 
-## 📊 Browser Compatibility
+##  Browser Compatibility
 
-- ✅ Chrome/Edge 80+
-- ✅ Firefox 75+
-- ✅ Safari 14+
-- ✅ Opera 67+
+-  Chrome/Edge 80+
+-  Firefox 75+
+-  Safari 14+
+-  Opera 67+
 
-## ⚡ Performance
+##  Performance
 
 - Initial load: ~2-3 seconds
 - Message encryption: <10ms
 - File encryption: Depends on file size
 - Connection establishment: 2-3 seconds
 
-## 📈 Stats
 
-- Lines of Code: ~2000
-- Components: 3
-- Dependencies: 8
-- Bundle Size: ~150KB (gzipped)
 
----
 
-**Made with ❤️ and 🔒 for privacy-conscious users**
 
 **Live Demo**: [https://encrypted-chat.vercel.app](https://encrypted-chat.vercel.app)
 
-**Star ⭐ this repo if you find it useful!**
+
