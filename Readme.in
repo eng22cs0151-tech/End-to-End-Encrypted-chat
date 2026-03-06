@@ -2,12 +2,6 @@
 
 A modern, end-to-end encrypted peer-to-peer chat application with file sharing capabilities. Built with React and PeerJS, featuring military-grade encryption to ensure complete privacy and security.
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg)
-![React](https://img.shields.io/badge/React-18.2.0-61DAFB?logo=react)
-![Encryption](https://img.shields.io/badge/Encryption-NaCl-green)
-
-## Features
-
 ### Core Features
 - **End-to-End Encryption**: Military-grade encryption using NaCl (Curve25519, XSalsa20, Poly1305)
 - **Peer-to-Peer Communication**: Direct browser-to-browser connections via WebRTC
@@ -74,20 +68,15 @@ A modern, end-to-end encrypted peer-to-peer chat application with file sharing c
 - Node.js (v16 or higher)
 - npm or yarn
 
-### Setup
 
-1. **Clone the repository**
-```bash
-git clone https://github.com/yourusername/secure-p2p-chat.git
-cd secure-p2p-chat
 ```
 
-2. **Install dependencies**
+1. **Install dependencies**
 ```bash
 npm install
 ```
 
-3. **Start the development servers**
+2. **Start the development servers**
 
 Terminal 1 - Start PeerJS signaling server:
 ```bash
@@ -99,7 +88,7 @@ Terminal 2 - Start React development server:
 npm run dev
 ```
 
-4. **Open the application**
+3. **Open the application**
 ```
 http://localhost:3000
 ```
@@ -188,45 +177,8 @@ const peer = new Peer({
   port: 9000,
   path: '/peerjs'
 });
-```
 
-2. Deploy your own PeerJS server (see `server/index.js`)
 
-##  Deployment
-
-### Deploy to Vercel (Recommended)
-
-1. **Install Vercel CLI**
-```bash
-npm install -g vercel
-```
-
-2. **Deploy**
-```bash
-vercel
-```
-
-3. **Production deployment**
-```bash
-vercel --prod
-```
-
-### Deploy to Netlify
-
-1. **Install Netlify CLI**
-```bash
-npm install -g netlify-cli
-```
-
-2. **Build and deploy**
-```bash
-npm run build
-netlify deploy --prod
-```
-
-See [DEPLOYMENT.md](DEPLOYMENT.md) for detailed deployment instructions.
-
-##  Security Considerations
 
 ### What's Encrypted
 -  All text messages
